@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A sample HTML5 web page with semantic structure, accessibility, and SEO best practices." />
+  <meta name="keywords" content="HTML5, Accessibility, SEO, Semantic Elements, Web Development" />
+  <meta name="author" content="Your Name" />
+  <title>Accessible & SEO-Friendly Web Page</title>
+
+  <!-- Open Graph Meta for Social Sharing -->
+  <meta property="og:title" content="Accessible & SEO-Friendly Web Page" />
+  <meta property="og:description" content="A sample HTML5 web page demonstrating accessibility and SEO best practices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.example.com/" />
+  <meta property="og:image" content="https://www.example.com/thumbnail.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header role="banner">
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 id="home">Welcome to Our Accessible Web Page</h1>
+  </header>
+
+  <main role="main">
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Us</h2>
+      <p>We are committed to building inclusive and search-optimized websites using the latest HTML5 standards and accessibility practices.</p>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <article aria-labelledby="web-dev-heading">
+        <h3 id="web-dev-heading">Web Development</h3>
+        <p>We build responsive, fast-loading, and accessible websites using semantic HTML5 and modern technologies.</p>
+      </article>
+      <article aria-labelledby="seo-heading">
+        <h3 id="seo-heading">SEO Optimization</h3>
+        <p>Our team ensures your content is easily discoverable by search engines with proper structure and metadata.</p>
+      </article>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="/submit" method="POST" aria-label="Contact Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Company. All rights reserved.</p>
+    <a href="#home">Back to Top</a>
+  </footer>
+</body>
+</html>
